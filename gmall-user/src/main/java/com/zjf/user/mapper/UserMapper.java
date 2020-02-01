@@ -1,7 +1,7 @@
 package com.zjf.user.mapper;
 
 import com.zjf.user.bean.UmsMember;
-import org.apache.ibatis.annotations.Mapper;
+import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
@@ -10,6 +10,6 @@ import java.util.List;
  * @create 2020/2/1-9:27
  */
 
-public interface UserMapper {
-    List<UmsMember> selectAllUser();
+public interface UserMapper extends Mapper<UmsMember> {
+//    List<UmsMember> selectAllUser();
 }

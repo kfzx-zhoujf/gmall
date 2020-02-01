@@ -1,6 +1,7 @@
 package com.zjf.user.service;
 
 import com.zjf.user.bean.UmsMember;
+import com.zjf.user.bean.UmsMemberReceiveAddress;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,4 +13,6 @@ import java.util.List;
 
 public interface UserService {
     List<UmsMember> getAllUser();
+
+    List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId);
 }
